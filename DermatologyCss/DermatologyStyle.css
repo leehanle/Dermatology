@@ -1,0 +1,1447 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff2);
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff2);
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2);
+  font-weight: 700;
+  font-display: swap;
+}
+body {
+  font-size: 16px;
+  background-image: linear-gradient(#f2e8e6, #d5b2c4, #6592ba);
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: "MaruBuri";
+}
+@media (max-width: 768px) {
+  /*header*/
+  header {
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+  header .headerBox {
+    /* display: flex; */
+    color: #fff;
+    width: 90%;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin: 10px auto;
+    /* font-size: 1.5rem; */
+  }
+  header .headerBox ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .headerBox ul li {
+    display: flex;
+    gap: 10px;
+  }
+  header .headerBox .logo {
+    /* border: 1px solid red; */
+    /* margin-top: 20px; */
+    display: none;
+    /* width: 100px; */
+  }
+  header .headerBox .logo img {
+    width: 100%;
+  }
+  header .headerBox .rightBox {
+    display: Flex;
+    gap: 50px;
+    display: none;
+  }
+  header .headerBox .rightBox .ko {
+    display: flex;
+    gap: 10px;
+  }
+
+  header .headerBox .rightBox .line1 {
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+  }
+  header .headerBox .rightBox .line2 {
+    width: 30px;
+    height: 2.5px;
+    background-color: #fff;
+    margin: 10px 0px 0px 20px;
+  }
+  /*visual*/
+  #visual .imgBox {
+    background-image: url(../DermatologyImg/main_visual_cont1_img1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #visual .textBox {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    color: #fff;
+    transform: translateY(-50%);
+  }
+  #visual .textBox h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+  #visual .textBox p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-weight: 600;
+  }
+  /*container1
+solution*/
+  #container .solution {
+    width: 100%;
+    color: #0d4077;
+  }
+  #container .solution .textBox {
+    text-align: Center;
+    margin: 50px 0px;
+  }
+  #container .solution .textBox h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  #container .solution .textBox p {
+    /* font-size: 1.3rem; */
+    line-height: 30px;
+    font-weight: 600;
+  }
+  #container .solution .ulBox {
+    /* border: 1px solid red; */
+    width: 100%;
+    /* margin: 50px 0px 0px; */
+    height: 500px;
+  }
+
+  #container .solution .ulBox .textUl {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px auto 0px;
+  }
+  #container .solution .ulBox .textUl li h3 {
+    /* font-size: 1.5rem; */
+    margin: 40px 0px 10px;
+  }
+  /* #container .solution .ulBox .textUl li .line {
+  width: 250px;
+  height: 3px;
+  background-color: #ccc;
+  margin: 0px auto 10px;
+} */
+  #container .solution .ulBox .textUl li p {
+    /* font-size: 1.3rem; */
+    font-weight: 600;
+  }
+  #container .solution .ulBox .imgBox {
+    /* border: 1px solid orange; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    gap: 50px;
+  }
+  #container .solution .ulBox .imgBox li {
+    width: calc(100% / 4);
+  }
+  #container .solution .ulBox .imgBox li div {
+    width: 100%;
+    height: 100%;
+  }
+  #container .solution .ulBox .imgBox li div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*container2
+content*/
+  #container .content {
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid red; */
+    position: relative;
+    color: #fff;
+  }
+  #container .content div {
+    transition: 1s;
+  }
+  #container .content .aImg {
+    position: absolute;
+    /* top: 10%; */
+    left: 20px;
+    /* border: 1px solid red; */
+    height: 300px;
+  }
+  #container .content .aImg img {
+    border-radius: 40%;
+    height: 100%;
+  }
+  #container .content .bImg {
+    position: absolute;
+    top: 30%;
+    /* left: 10px; */
+  }
+  #container .content .cImg {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+  }
+  #container .content .cImg img {
+    border-radius: 50%;
+  }
+  #container .content .eImg {
+    position: absolute;
+    top: 0%;
+    right: 10px;
+    /* border: 1px solid red; */
+    height: 300px;
+    width: 300px;
+  }
+  #container .content .eImg img {
+    width: 100%;
+    height: 100%;
+  }
+  #container .content .fImg {
+    position: absolute;
+    right: 0%;
+    bottom: 10%;
+  }
+  #container .content .fImg img {
+    border-radius: 50%;
+  }
+  #container .content .dImg {
+    position: absolute;
+    right: 20%;
+    top: 10%;
+    z-index: 8;
+  }
+  #container .content p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+    font-size: 2.5rem;
+    line-height: 60px;
+    letter-spacing: 1px;
+  }
+  #container .content p span {
+    font-weight: bold;
+  }
+  /*container3
+B_V*/
+  .B_V {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .B_V .textBox {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0d4077;
+  }
+  .B_V .textBox .topText {
+    display: Flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  .B_V .textBox .centerText {
+    display: Flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .B_V .link {
+    color: #0d4077;
+    justify-content: center;
+    margin: 50px auto;
+    font-size: 1.7rem;
+    display: flex;
+    gap: 50px;
+    border: 1px solid #0d4077;
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 0px 30px 0px 30px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .B_V .imgBox {
+    position: relative;
+    height: 50vh;
+    margin-bottom: 100px;
+  }
+  .B_V .imgBox .img1 {
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 300px;
+  }
+  .B_V .imgBox .img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  .B_V .imgBox .img2 {
+    position: absolute;
+    right: 40%;
+    bottom: 0px;
+    /* border: 1px solid red; */
+    width: 400px;
+    height: 300px;
+  }
+  .B_V .imgBox .img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  /*container4
+our*/
+  #container .Our {
+    width: 100%;
+    color: #0d4077;
+    /* background-color: #6592ba; */
+    height: 110ch;
+  }
+  #container .Our .textBox {
+    text-align: center;
+  }
+  #container .Our .textBox h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  #container .Our .textBox p {
+    font-size: 1.5rem;
+    font-weight: 550;
+  }
+  #container .Our .textUl {
+    display: Flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  #container .Our .textUl li {
+    cursor: pointer;
+    width: 100px;
+  }
+  #container .Our .textUl .line {
+    width: 100px;
+    height: 2px;
+    background-color: #dac2a3;
+    margin-top: 10px;
+    display: none;
+  }
+  #container .Our .textUl .line.ab {
+    display: block;
+  }
+  #container .Our .imgBox {
+    position: relative;
+    z-index: -1;
+  }
+  #container .Our .imgBox div {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+  #container .Our .imgBox div.cd {
+    display: block;
+  }
+
+  #container .Our .imgBox div ul {
+    position: absolute;
+    right: 12%;
+    bottom: 10%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #dac2a3;
+  }
+  #container .Our .imgBox div ul li {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  #container .Our .imgBox div h3 {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: #dac2a3;
+  }
+  #container .Our .imgBox div ul {
+    list-style: disc;
+    margin: 30px 0px;
+  }
+  #container .Our .imgBox div ul li {
+    margin: 10px 0px;
+  }
+  #container .Our .imgBox1 {
+    background-image: url(../DermatologyImg/sec02-tab01-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox2 {
+    background-image: url(../DermatologyImg/sec02-tab02-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox3 {
+    background-image: url(../DermatologyImg/sec02-tab03-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox4 {
+    background-image: url(../DermatologyImg/sec02-tab04-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox5 {
+    background-image: url(../DermatologyImg/sec02-tab05-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  /*footer*/
+  footer {
+    text-align: center;
+    width: 100%;
+    margin: 50px auto;
+    color: #ccc;
+  }
+  footer h2 {
+    font-size: 10rem;
+    /* color: #fff; */
+    opacity: 0.5;
+  }
+  footer .dentist {
+    margin: 50px 0px;
+    /* border: 1px solid red; */
+    height: 30px;
+  }
+  footer .dentist img {
+    height: 100%;
+  }
+  footer .textUl {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  footer .line {
+    width: 150px;
+    height: 2px;
+    background-color: #fff;
+  }
+  footer p {
+    margin: 10px 0px;
+  }
+  footer .iconUl {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  footer .iconBox4 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  /*header*/
+  header {
+    background-color: #000;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+  header .headerBox {
+    display: flex;
+    color: #fff;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    /* font-size: 1.5rem; */
+  }
+  header .headerBox ul {
+    display: flex;
+    gap: 50px;
+  }
+  header .headerBox ul li {
+    display: flex;
+    gap: 10px;
+  }
+  header .headerBox .logo {
+    /* border: 1px solid red; */
+    margin-top: 20px;
+
+    width: 100px;
+  }
+  header .headerBox .logo img {
+    width: 100%;
+  }
+  header .headerBox .rightBox {
+    display: Flex;
+    gap: 50px;
+  }
+  header .headerBox .rightBox .ko {
+    display: flex;
+    gap: 10px;
+  }
+
+  header .headerBox .rightBox .line1 {
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+  }
+  header .headerBox .rightBox .line2 {
+    width: 30px;
+    height: 2.5px;
+    background-color: #fff;
+    margin: 10px 0px 0px 20px;
+  }
+  /*visual*/
+  #visual .imgBox {
+    background-image: url(../DermatologyImg/main_visual_cont1_img1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #visual .textBox {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    color: #fff;
+    transform: translateY(-50%);
+  }
+  #visual .textBox h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+  #visual .textBox p {
+    /* font-size: 20px; */
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+  /*container1
+solution*/
+  #container .solution {
+    width: 100%;
+    color: #0d4077;
+  }
+  #container .solution .textBox {
+    text-align: Center;
+    margin: 50px 0px;
+  }
+  #container .solution .textBox h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
+  #container .solution .textBox p {
+    font-size: 1.3rem;
+    line-height: 30px;
+    font-weight: 600;
+  }
+  #container .solution .ulBox {
+    /* border: 1px solid red; */
+    width: 100%;
+    /* margin: 50px 0px 0px; */
+    height: 500px;
+  }
+
+  #container .solution .ulBox .textUl {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px auto 0px;
+  }
+  #container .solution .ulBox .textUl li h3 {
+    font-size: 1.5rem;
+    margin: 40px 0px 10px;
+  }
+  /* #container .solution .ulBox .textUl li .line {
+  width: 250px;
+  height: 3px;
+  background-color: #ccc;
+  margin: 0px auto 10px;
+} */
+  #container .solution .ulBox .textUl li p {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  #container .solution .ulBox .imgBox {
+    /* border: 1px solid orange; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    gap: 50px;
+  }
+  #container .solution .ulBox .imgBox li {
+    width: calc(100% / 4);
+  }
+  #container .solution .ulBox .imgBox li div {
+    width: 100%;
+    height: 100%;
+  }
+  #container .solution .ulBox .imgBox li div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*container2
+content*/
+  #container .content {
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid red; */
+    position: relative;
+    color: #fff;
+  }
+  #container .content div {
+    transition: 1s;
+  }
+  #container .content .aImg {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* border: 1px solid red; */
+    height: 300px;
+  }
+  #container .content .aImg img {
+    border-radius: 40%;
+    height: 100%;
+  }
+  #container .content .bImg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+  }
+  #container .content .cImg {
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+  }
+  #container .content .cImg img {
+    border-radius: 50%;
+  }
+  #container .content .eImg {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    /* border: 1px solid red; */
+    height: 300px;
+    width: 300px;
+  }
+  #container .content .eImg img {
+    width: 100%;
+    height: 100%;
+  }
+  #container .content .fImg {
+    position: absolute;
+    right: 25%;
+    bottom: 10%;
+  }
+  #container .content .fImg img {
+    border-radius: 50%;
+  }
+  #container .content .dImg {
+    position: absolute;
+    right: 20%;
+    top: 10%;
+  }
+  #container .content p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+    font-size: 2.5rem;
+    line-height: 60px;
+    letter-spacing: 1px;
+  }
+  #container .content p span {
+    font-weight: bold;
+  }
+  /*container3
+B_V*/
+  .B_V {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .B_V .textBox {
+    text-align: center;
+    font-size: 2rem;
+    color: #0d4077;
+  }
+  .B_V .textBox .topText {
+    display: Flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  .B_V .textBox .centerText {
+    display: Flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  .B_V .link {
+    color: #0d4077;
+    justify-content: center;
+    margin: 50px auto;
+    font-size: 1.7rem;
+    display: flex;
+    gap: 50px;
+    border: 1px solid #0d4077;
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 0px 30px 0px 30px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .B_V .imgBox {
+    position: relative;
+    height: 50vh;
+    margin-bottom: 100px;
+  }
+  .B_V .imgBox .img1 {
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+  }
+  .B_V .imgBox .img2 {
+    position: absolute;
+    right: 40%;
+    bottom: 0px;
+  }
+  /*container4
+our*/
+  #container .Our {
+    width: 100%;
+    color: #0d4077;
+    /* background-color: #6592ba; */
+    height: 110ch;
+  }
+  #container .Our .textBox {
+    text-align: center;
+  }
+  #container .Our .textBox h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  #container .Our .textBox p {
+    font-size: 1.5rem;
+    font-weight: 550;
+  }
+  #container .Our .textUl {
+    display: Flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 50px auto;
+    text-align: center;
+    /* font-size: 1.3rem; */
+  }
+
+  #container .Our .textUl li {
+    cursor: pointer;
+    width: 300px;
+  }
+  #container .Our .textUl .line {
+    width: 200px;
+    height: 2px;
+    background-color: #dac2a3;
+    margin-top: 10px;
+    display: none;
+  }
+  #container .Our .textUl .line.ab {
+    display: block;
+  }
+  #container .Our .imgBox {
+    position: relative;
+    z-index: -1;
+  }
+  #container .Our .imgBox div {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+  #container .Our .imgBox div.cd {
+    display: block;
+  }
+
+  #container .Our .imgBox div ul {
+    position: absolute;
+    right: 12%;
+    bottom: 10%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #dac2a3;
+  }
+  #container .Our .imgBox div ul li {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  #container .Our .imgBox div h3 {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: #dac2a3;
+  }
+  #container .Our .imgBox div ul {
+    list-style: disc;
+    margin: 30px 0px;
+  }
+  #container .Our .imgBox div ul li {
+    margin: 10px 0px;
+  }
+  #container .Our .imgBox1 {
+    background-image: url(../DermatologyImg/sec02-tab01-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox2 {
+    background-image: url(../DermatologyImg/sec02-tab02-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox3 {
+    background-image: url(../DermatologyImg/sec02-tab03-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox4 {
+    background-image: url(../DermatologyImg/sec02-tab04-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox5 {
+    background-image: url(../DermatologyImg/sec02-tab05-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  /*footer*/
+  footer {
+    text-align: center;
+    width: 100%;
+    margin: 50px auto;
+    color: #ccc;
+  }
+  footer h2 {
+    font-size: 10rem;
+    /* color: #fff; */
+    opacity: 0.5;
+  }
+  footer .dentist {
+    margin: 50px 0px;
+    /* border: 1px solid red; */
+    height: 30px;
+  }
+  footer .dentist img {
+    height: 100%;
+  }
+  footer .textUl {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  footer .line {
+    width: 150px;
+    height: 2px;
+    background-color: #fff;
+  }
+  footer p {
+    margin: 10px 0px;
+  }
+  footer .iconUl {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  footer .iconBox4 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  /*header*/
+  header {
+    background-color: #000;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+  header .headerBox {
+    display: flex;
+    color: #fff;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    font-size: 1.5rem;
+  }
+  header .headerBox ul {
+    display: flex;
+    gap: 50px;
+  }
+  header .headerBox ul li {
+    display: flex;
+    gap: 10px;
+  }
+  header .headerBox .logo {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+  }
+  header .headerBox .rightBox {
+    display: Flex;
+    gap: 50px;
+  }
+  header .headerBox .rightBox .ko {
+    display: flex;
+    gap: 10px;
+  }
+
+  header .headerBox .rightBox .line1 {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+  }
+  header .headerBox .rightBox .line2 {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 10px 0px 0px 20px;
+  }
+  /*visual*/
+  #visual .imgBox {
+    background-image: url(../DermatologyImg/main_visual_cont1_img1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #visual .textBox {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    color: #fff;
+    transform: translateY(-50%);
+  }
+  #visual .textBox h2 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+  #visual .textBox p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+  /*container1
+solution*/
+  #container .solution {
+    width: 100%;
+    color: #0d4077;
+  }
+  #container .solution .textBox {
+    text-align: Center;
+    margin: 50px 0px;
+  }
+  #container .solution .textBox h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
+  #container .solution .textBox p {
+    font-size: 1.3rem;
+    line-height: 30px;
+    font-weight: 600;
+  }
+  #container .solution .ulBox {
+    /* border: 1px solid red; */
+    width: 100%;
+    /* margin: 50px 0px 0px; */
+    height: 400px;
+  }
+
+  #container .solution .ulBox .textUl {
+    width: 85%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px auto 0px;
+  }
+  #container .solution .ulBox .textUl li h3 {
+    font-size: 1.5rem;
+    margin: 40px 0px 10px;
+  }
+  /* #container .solution .ulBox .textUl li .line {
+  width: 250px;
+  height: 3px;
+  background-color: #ccc;
+  margin: 0px auto 10px;
+} */
+  #container .solution .ulBox .textUl li p {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  #container .solution .ulBox .imgBox {
+    /* border: 1px solid orange; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    gap: 50px;
+  }
+  #container .solution .ulBox .imgBox li {
+    width: calc(100% / 4);
+  }
+  #container .solution .ulBox .imgBox li div {
+    width: 100%;
+    height: 100%;
+  }
+  #container .solution .ulBox .imgBox li div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*container2
+content*/
+  #container .content {
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid red; */
+    position: relative;
+    color: #fff;
+  }
+  #container .content div {
+    transition: 1s;
+  }
+  #container .content .aImg {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  #container .content .aImg img {
+    border-radius: 40%;
+  }
+  #container .content .bImg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+  }
+  #container .content .cImg {
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+  }
+  #container .content .cImg img {
+    border-radius: 50%;
+  }
+  #container .content .eImg {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+  }
+  #container .content .fImg {
+    position: absolute;
+    right: 25%;
+    bottom: 10%;
+  }
+  #container .content .fImg img {
+    border-radius: 50%;
+  }
+  #container .content .dImg {
+    position: absolute;
+    right: 20%;
+    top: 10%;
+  }
+  #container .content p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+    font-size: 5rem;
+    line-height: 100px;
+    letter-spacing: 1px;
+  }
+  #container .content p span {
+    font-weight: bold;
+  }
+  /*container3
+B_V*/
+  .B_V {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .B_V .textBox {
+    text-align: center;
+    font-size: 2rem;
+    color: #0d4077;
+  }
+  .B_V .textBox .topText {
+    display: Flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  .B_V .textBox .centerText {
+    display: Flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  .B_V .link {
+    color: #0d4077;
+    justify-content: center;
+    margin: 50px auto;
+    font-size: 1.7rem;
+    display: flex;
+    gap: 50px;
+    border: 1px solid #0d4077;
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 0px 30px 0px 30px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .B_V .imgBox {
+    position: relative;
+    height: 50vh;
+    margin-bottom: 100px;
+  }
+  .B_V .imgBox .img1 {
+    position: absolute;
+    left: 30%;
+    z-index: 9;
+  }
+  .B_V .imgBox .img2 {
+    position: absolute;
+    right: 30%;
+    bottom: 0px;
+  }
+  /*container4
+our*/
+  #container .Our {
+    width: 100%;
+    color: #0d4077;
+    /* background-color: #6592ba; */
+    height: 110ch;
+  }
+  #container .Our .textBox {
+    text-align: center;
+  }
+  #container .Our .textBox h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  #container .Our .textBox p {
+    font-size: 1.5rem;
+    font-weight: 550;
+  }
+  #container .Our .textUl {
+    display: Flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  #container .Our .textUl li {
+    cursor: pointer;
+    width: 300px;
+  }
+  #container .Our .textUl .line {
+    width: 300px;
+    height: 2px;
+    background-color: #dac2a3;
+    margin-top: 10px;
+    display: none;
+  }
+  #container .Our .textUl .line.ab {
+    display: block;
+  }
+  #container .Our .imgBox {
+    position: relative;
+    z-index: -1;
+  }
+  #container .Our .imgBox div {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+  #container .Our .imgBox div.cd {
+    display: block;
+  }
+
+  #container .Our .imgBox div ul {
+    position: absolute;
+    right: 12%;
+    bottom: 10%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #dac2a3;
+  }
+  #container .Our .imgBox div ul li {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  #container .Our .imgBox div h3 {
+    font-size: 5rem;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: #dac2a3;
+  }
+  #container .Our .imgBox div ul {
+    list-style: disc;
+    margin: 30px 0px;
+  }
+  #container .Our .imgBox div ul li {
+    margin: 10px 0px;
+  }
+  #container .Our .imgBox1 {
+    background-image: url(../DermatologyImg/sec02-tab01-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox2 {
+    background-image: url(../DermatologyImg/sec02-tab02-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox3 {
+    background-image: url(../DermatologyImg/sec02-tab03-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox4 {
+    background-image: url(../DermatologyImg/sec02-tab04-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  #container .Our .imgBox5 {
+    background-image: url(../DermatologyImg/sec02-tab05-img01.jpg);
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0px 0px;
+  }
+  /*footer*/
+  footer {
+    text-align: center;
+    width: 100%;
+    margin: 50px auto;
+    color: #ccc;
+  }
+  footer h2 {
+    font-size: 20rem;
+    /* color: #fff; */
+    opacity: 0.5;
+  }
+  footer .dentist {
+    margin: 50px 0px;
+  }
+  footer .textUl {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px 0px 50px;
+  }
+  footer .line {
+    width: 150px;
+    height: 2px;
+    background-color: #fff;
+  }
+  footer p {
+    margin: 10px 0px;
+  }
+  footer .iconUl {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  footer .iconBox4 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+}

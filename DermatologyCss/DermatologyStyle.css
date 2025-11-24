@@ -155,7 +155,8 @@ body {
 solution*/
   #container .solution {
     width: 100%;
-    color: #0d4077;
+    color: #6592ba;
+    margin: 200px 0px;
   }
   #container .solution .textBox {
     text-align: Center;
@@ -524,9 +525,10 @@ our*/
     gap: 30px;
     justify-content: center;
     margin-bottom: 50px;
+    width: 100%;
   }
   footer .line {
-    width: 150px;
+    width: 100%;
     height: 2px;
     background-color: #fff;
   }
@@ -631,7 +633,8 @@ our*/
 solution*/
   #container .solution {
     width: 100%;
-    color: #0d4077;
+    color: #6592ba;
+    margin: 200px 0px;
   }
   #container .solution .textBox {
     text-align: Center;
@@ -1083,7 +1086,8 @@ our*/
 solution*/
   #container .solution {
     width: 100%;
-    color: #0d4077;
+    color: #6592ba;
+    margin: 200px 0px;
   }
   #container .solution .textBox {
     text-align: Center;

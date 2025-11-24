@@ -9,12 +9,6 @@ a {
 ul {
   list-style: none;
 }
-@font-face {
-  font-family: "MaruBuri";
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff2);
-  font-weight: 200;
-  font-display: swap;
-}
 
 @font-face {
   font-family: "MaruBuri";
